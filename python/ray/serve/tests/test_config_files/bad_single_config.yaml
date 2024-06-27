@@ -1,0 +1,8 @@
+# Import path is a required field
+import_path:
+
+deployments:
+
+  - name: Multiplier
+    user_config:
+      factor: 1

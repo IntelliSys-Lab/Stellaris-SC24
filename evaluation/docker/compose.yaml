@@ -1,0 +1,21 @@
+services:
+
+  stellaris-head:
+    image: yhf0218/stellaris-head
+    shm_size: "16gb"
+    hostname: "head"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+  stellaris-worker:
+    image: yhf0218/stellaris-worker
+    deploy:
+      mode: replicated
+      replicas: 16
+      endpoint_mode: dnsrr
+    shm_size: "2gb"

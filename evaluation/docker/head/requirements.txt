@@ -1,0 +1,14 @@
+torch
+gymnasium==0.28.1
+gymnasium[atari,accept-rom-license]==0.28.1
+ray[rllib]==2.8
+mujoco
+mujoco-py
+# pygame
+cython<3
+redis
+py-spy
+pandas
+numpy==1.26.4
+matplotlib
+seaborn
