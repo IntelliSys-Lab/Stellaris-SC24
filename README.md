@@ -72,7 +72,11 @@ cd Stellaris-SC24/evaluation
 ```
 cd docker && ./pull_docker.sh
 ```
-6. Run Stellaris demo. The demo experiment may take up to 20 minutes to complete.
+6. Start the container cluster using Docker Compose.
+```
+docker compose up -d
+```
+7. Run Stellaris demo. The demo experiment may take up to 20 minutes to complete.
 ```
 cd ../ && ./run_experiment.sh
 ```
