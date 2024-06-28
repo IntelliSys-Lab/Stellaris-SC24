@@ -9,11 +9,6 @@ SYSTEM_NAMES=("stellaris" "rllib")
 ENV_NAMES=("Hopper-v3" "Humanoid-v3" "Walker2d-v3")
 ALGO_NAMES=("ppo")
 
-# Start the container cluster
-cd docker
-docker compose up -d
-cd ..
-
 # Start redis server
 docker exec -w ${WORKDIR}/docker ${CONTAINER_NAME} ./redis_start.sh
 
