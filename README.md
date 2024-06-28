@@ -39,7 +39,7 @@ Stellaris is built on top of [Ray RLlib](https://github.com/apache/openwhisk). W
 
 ### Prerequisite
 
-- [Chameleon Cloud UC access](https://chi.uc.chameleoncloud.org/): Instance note type must be **gpu_rtx_6000**
+- [Chameleon Cloud UC access](https://chi.uc.chameleoncloud.org/): Instance node type must be **gpu_rtx_6000**
 - [Chameleon Cloud image](https://chi.uc.chameleoncloud.org/project/images): Image must be **CC-Ubuntu22.04**
 
 ### Instance Setup
