@@ -1,6 +1,6 @@
 #! /bin/bash
 
-set -e
+set -ex
 
 CONTAINER_NAME="docker-stellaris-head-1"
 WORKDIR="/root/Stellaris-SC24/evaluation"
