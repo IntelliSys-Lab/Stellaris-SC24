@@ -52,7 +52,7 @@ We refer readers to [Chameleon cloud documents](https://chameleoncloud.readthedo
 
 ## Deployment Instructions
 
-1. Download the github repo.
+1. Download the GitHub repo.
 ```
 git clone https://github.com/IntelliSys-Lab/Stellaris-SC24
 ```
@@ -64,7 +64,7 @@ cd Stellaris-SC24/evaluation
 ```
 ./install_docker.sh
 ```
-4. Install NVIDIA cuda driver.
+4. Install NVIDIA CUDA driver.
 ```
 ./install_nvidia.sh
 ```
@@ -83,7 +83,7 @@ cd ../ && ./run_experiment.sh
 
 ## Build Docker Images
 
-Alternatively, we also provide scripts that build Docker images locally, but this can take significant amount of time if building from scratch.
+Alternatively, we also provide scripts that build Docker images locally, but this can take a significant amount of time if built from scratch.
 ```
 cd docker && ./build_docker.sh
 ```
