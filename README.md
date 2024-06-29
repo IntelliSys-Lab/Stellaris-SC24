@@ -19,6 +19,8 @@
 
 # Stellaris-SC24
 
+[![DOI](https://zenodo.org/badge/820219752.svg)](https://zenodo.org/doi/10.5281/zenodo.12589953)
+
 ----
 
 This repo contains a demo implementation of our SC 2024 paper, [Stellaris](https://github.com/IntelliSys-Lab/Stellaris-SC24) (coming soon...). 
