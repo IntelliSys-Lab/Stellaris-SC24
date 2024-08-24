@@ -396,9 +396,9 @@ class AsyncLearner(multiprocessing.Process):
                 logp_ratio_list.append(is_logp_ratio.detach())
             
             stacked_logp_ratio = torch.stack(logp_ratio_list, dim=0)
-            max_logp_ratio, _ = torch.max(stacked_logp_ratio, dim=0)
-            max_logp_ratio = torch.clamp_min(max_logp_ratio, self.config["serverless_is_ratio"])
-            logp_ratio = torch.minimum(logp_ratio, max_logp_ratio)
+            min_logp_ratio, _ = torch.min(stacked_logp_ratio, dim=0)
+            min_logp_ratio = torch.clamp_min(min_logp_ratio, self.config["serverless_is_ratio"])
+            logp_ratio = torch.minimum(logp_ratio, min_logp_ratio)
 
         # Only calculate kl loss if necessary (kl-coeff > 0.0).
         if self.config["kl_coeff"] > 0.0:
