@@ -81,7 +81,7 @@ kl_coeff = 0
 evaluation_interval = 1
 
 # Pricing units
-serverless_learner_per_s = (3.0600 + 17.92 / 30 / 24) / 60 / 60 / num_rollout_workers # vm + ip + disk
+serverless_learner_per_s = (3.0600 + 17.92 / 30 / 24) / 60 / 60 / num_async_learners # vm + ip + disk
 serverless_actor_per_s = 0.0000000167 * 1000  # mem + network
 server_learner_per_s = (3.0600 + 17.92 / 30 / 24) / 60 / 60 # vm + ip + disk
 server_actor_per_s = (2.04 + 17.92 / 30 / 24) / 60 / 60 # vm + ip + disk
